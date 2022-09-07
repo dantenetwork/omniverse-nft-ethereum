@@ -1,0 +1,23 @@
+{
+  "name": "omniverse-nft-ethereum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@virgil.github.com:dantenetwork/omniverse-nft-ethereum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hthuang/contracts": "^0.2.0",
+    "@openzeppelin/contracts": "^4.7.3"
+  }
+}
