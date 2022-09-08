@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hthuang/contracts": "^0.2.0",
+    "@hthuang/contracts": "^0.2.3",
     "@openzeppelin/contracts": "^4.7.3"
   }
 }
