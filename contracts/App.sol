@@ -73,7 +73,7 @@ contract App is ContractBase {
         uint256 index = 0;
         for (uint256 i = 0; i < pendingNFTList.length; i++) {
             index = i;
-            if (pendingNFTList[i].receiver == msg.sender) {
+            if (pendingNFTList[i].uuid == tokenId) {
                 found = true;
                 break;
             }
@@ -85,6 +85,8 @@ contract App is ContractBase {
         require(msg.sender == pendingNFTList[index].receiver, "Caller not the receiver");
 
         nftContract.mint(msg.sender, tokenId, pendingNFTList[index].tokenURL);
+        pendingNFTList[index] = pendingNFTList[pendingNFTList.length - 1];
+        pendingNFTList.pop();
     }
 
     /**
@@ -119,5 +121,17 @@ contract App is ContractBase {
         message.content = Content(flowContract.contractAddress, flowContract.action, data);
 
         crossChainContract.sendMessage(message);
+    }
+
+    function getPendingListNumber() external view returns (uint256) {
+        return pendingNFTList.length;
+    }
+
+    function verify(
+        string calldata /*_chainName*/,
+        bytes4 /*_funcName*/,
+        bytes calldata /*_sender*/
+    ) public view virtual returns (bool) {
+        return true;
     }
 }
