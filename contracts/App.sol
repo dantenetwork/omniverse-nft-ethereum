@@ -16,6 +16,7 @@ contract App is ContractBase {
     }
 
     struct FlowContract {
+        string chainName;
         bytes contractAddress;
         bytes action;
     }
@@ -31,7 +32,8 @@ contract App is ContractBase {
         nftContract = OmniverseNFT(_address);
     }
 
-    function setFlowContract(bytes calldata _contract, bytes calldata _action) external onlyOwner {
+    function setFlowContract(string calldata _chainName, bytes calldata _contract, bytes calldata _action) external onlyOwner {
+        flowContract.chainName = _chainName;
         flowContract.contractAddress = _contract;
         flowContract.action = _action;
     }
@@ -116,7 +118,7 @@ contract App is ContractBase {
         item2.value = abi.encode(hashValue);
 
         ISentMessage memory message;
-        message.toChain = "FLOW";
+        message.toChain = flowContract.chainName;
         message.session = Session(0, 0, "", "", "");
         message.content = Content(flowContract.contractAddress, flowContract.action, data);
 
