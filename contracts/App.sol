@@ -111,7 +111,7 @@ contract App is ContractBase {
         PayloadItem memory item1 = data.items[1];
         item1.name = "receiver";
         item1.msgType = MsgType.Bytes;
-        item1.value = receiver;
+        item1.value = abi.encode(receiver);
         PayloadItem memory item2 = data.items[2];
         item2.name = "hashValue";
         item2.msgType = MsgType.Bytes;
