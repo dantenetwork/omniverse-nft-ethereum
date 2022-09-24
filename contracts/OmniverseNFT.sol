@@ -24,6 +24,7 @@ contract OmniverseNFT is ERC721, Ownable {
     }
 
     function burn(uint256 tokenId) external onlyOwner() {
+        delete tokenURIs[tokenId];
         _burn(tokenId);
     }
 }
