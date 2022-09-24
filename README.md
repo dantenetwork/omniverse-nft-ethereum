@@ -43,30 +43,30 @@ This function is used together with the [Omniverse NFT on Flow](https://github.c
 #### From PlatON to Flow
 - Receive the NFT sent from Flow.
 
-Firstly, send an NFT from Flow to PlatON, the tutorial is shown [here](https://github.com/dantenetwork/flow-sdk#/nft-bridgeomniverse-nft-coming-soon).
+  Firstly, send an NFT from Flow to PlatON, the tutorial is shown [here](https://github.com/dantenetwork/flow-sdk#/nft-bridgeomniverse-nft-coming-soon).
 
 - Claim the NFT on PlatON
 
-The receiver must call the method `claimToken` to really get the NFT.
+  The receiver must call the method `claimToken` to really get the NFT.
 
-Parameters are shown below:
+  Parameters are shown below:
 
-- tokenId: The id of the token that you want to claim
-- answer: The answer to the hash which is set on Flow
+  - tokenId: The id of the token that you want to claim
+  - answer: The answer to the hash which is set on Flow
 
-![image](https://user-images.githubusercontent.com/83757490/192097866-2e14ace4-603a-4db2-ad09-8019b9dd87d9.png)
+  ![image](https://user-images.githubusercontent.com/83757490/192097866-2e14ace4-603a-4db2-ad09-8019b9dd87d9.png)
 
 
 - Send an NFT from PlatON to Flow
 
-Call the method `ccsUnlock` in the contract `App` on `PlatON`. Ensure the sender is the owner of the NFT which will be sent.
+  Call the method `ccsUnlock` in the contract `App` on `PlatON`. Ensure the sender is the owner of the NFT which will be sent.
 
-Parameters are shown below:
+  Parameters are shown below:
 
-- tokenId: The id of the token that you want to send
-- receiver: The address of the receiver which will receive the token on Flow
-- hashValue: The hash of the answer which needs to be set when claiming the token on Flow
+  - tokenId: The id of the token that you want to send
+  - receiver: The address of the receiver which will receive the token on Flow
+  - hashValue: The hash of the answer which needs to be set when claiming the token on Flow
 
 - Claim the NFT on Flow
 
-The tutorial is shown [here](https://github.com/dantenetwork/flow-sdk#/nft-bridgeomniverse-nft-coming-soon).
+  The tutorial is shown [here](https://github.com/dantenetwork/flow-sdk#/nft-bridgeomniverse-nft-coming-soon).
