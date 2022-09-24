@@ -19,6 +19,7 @@
   "dependencies": {
     "@hthuang/contracts": "^0.2.4",
     "@openzeppelin/contracts": "^4.7.3",
+    "@truffle/hdwallet-provider": "^2.0.15",
     "bn.js": "^5.2.1",
     "web3": "^1.7.5"
   }
