@@ -4,7 +4,8 @@ This is the EVM version of Omniverse-NFT, which is under developing now and the 
 
 ## Experience
 ### Open Remix
-Open [Remix](remix.ethereum.org/) with Google/Firefox brower.
+* Open [Remix](remix.ethereum.org/) with Google/Firefox brower.
+* Operate [smart contract App](./contracts/App.sol) and [smart contract OmniverseNFT](./contracts/OmniverseNFT.sol) by Remix.
 
 ### Import Code
 Import the smart contract code in the directory `contracts` into the project in *Remix*, or use the localhost workspace to load the code.
