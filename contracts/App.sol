@@ -115,7 +115,7 @@ contract App is ContractBase {
         PayloadItem memory item2 = data.items[2];
         item2.name = "hashValue";
         item2.msgType = MsgType.Bytes;
-        item2.value = abi.encode(hashValue);
+        item2.value = abi.encode(abi.encodePacked(hashValue));
 
         ISentMessage memory message;
         message.toChain = flowContract.chainName;
