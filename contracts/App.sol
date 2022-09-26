@@ -129,6 +129,10 @@ contract App is ContractBase {
         return pendingNFTList.length;
     }
 
+    function transferNFTContractOwner() external onlyOwner {
+        nftContract.transferOwnership(msg.sender);
+    }
+
     function verify(
         string calldata /*_chainName*/,
         bytes4 /*_funcName*/,

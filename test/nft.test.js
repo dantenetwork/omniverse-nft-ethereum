@@ -132,4 +132,22 @@ contract('OmniverseNFT', function(accounts) {
             });
         });
     });
+
+    describe('Transfer NFT contract ownership', function() {
+        describe('Caller not owner', function() {
+            it('should fail', async () => {
+                await utils.expectThrow(app.transferNFTContractOwner({from: user1}), 'not the owner');
+            });
+        });
+
+        describe('Caller is owner', function() {
+            it('should execute successfully', async () => {
+                let nftOwner = await nft.owner();
+                assert(nftOwner == app.address);
+                await app.transferNFTContractOwner({from: owner});
+                nftOwner = await nft.owner();
+                assert(nftOwner == owner);
+            });
+        });
+    });
 });
