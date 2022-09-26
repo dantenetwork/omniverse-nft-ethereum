@@ -71,7 +71,7 @@ This function is used together with the [Omniverse NFT on Flow](https://github.c
   - receiver: The address of the receiver which will receive the token on Flow
   - hashValue: The hash of the answer which needs to be set when claiming the token on Flow
   
-  ![image](https://user-images.githubusercontent.com/83757490/192233191-c6269025-211c-420a-aea3-ef735a41840c.png)
+  ![image](https://user-images.githubusercontent.com/83757490/192233640-f8bac0cc-cebc-4ad7-86c8-f9cd41fb5057.png)
 
 
 - Claim the NFT on Flow
