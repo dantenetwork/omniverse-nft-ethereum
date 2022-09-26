@@ -54,7 +54,11 @@ This function is used together with the [Omniverse NFT on Flow](https://github.c
   - tokenId: The id of the token that you want to claim
   - answer: The answer to the hash which is set on Flow
 
-  ![image](https://user-images.githubusercontent.com/83757490/192097866-2e14ace4-603a-4db2-ad09-8019b9dd87d9.png)
+  ![image](https://user-images.githubusercontent.com/83757490/192231991-5e280585-e85c-4870-8a00-74deb5d8b8ce.png)
+  
+- Check the NFT on [NFTScan](https://platon.nftscan.com/lat1s5h5hn58rlm0y4krehrhj7qw6eqnrgef0pqwqm/110830490)
+
+  ![image](https://user-images.githubusercontent.com/83757490/192232328-12aadd71-d267-48ba-97e5-52b9f296f2d8.png)
 
 
 - Send an NFT from PlatON to Flow
@@ -66,6 +70,9 @@ This function is used together with the [Omniverse NFT on Flow](https://github.c
   - tokenId: The id of the token that you want to send
   - receiver: The address of the receiver which will receive the token on Flow
   - hashValue: The hash of the answer which needs to be set when claiming the token on Flow
+  
+  ![image](https://user-images.githubusercontent.com/83757490/192233640-f8bac0cc-cebc-4ad7-86c8-f9cd41fb5057.png)
+
 
 - Claim the NFT on Flow
 
