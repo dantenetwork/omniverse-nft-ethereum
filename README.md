@@ -29,8 +29,8 @@ Switch the network to **PlatON mainnet**, and get some tokens to pay gas fee.
 
 We have deployed `App` and `OmniverseNFT` contracts for showcase, addresses of which are shown below:
 
-- App: 0xAF43344A48EBC1629d7385B71086E067E73cEd63
-- OmniverseNFT: 0x852F4bCE871FF6F256c3CdC779780ED64131A329
+- App: 0x3800797289ad8F2d5760f5B27197cfc59C653358
+- OmniverseNFT: 0x20D5b540872E1D4406A56D2EaAb1e9cE1B0013e0
 
 Load contracts with specified addresses.
 
